@@ -1,0 +1,244 @@
+[
+    {
+        "enName": "Brown Sugar Boba Milk",
+        "zhName": "焰遇幸福",
+        "zhDesc": "黑糖珍珠真鲜奶",
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 12.50
+            },
+            {
+                "temperature": "hot",
+                "price": 13.50
+            }
+        ]
+    },
+    {
+        "enName": "Mango Smoothie and Rabbit Panna Cotta",
+        "zhName": "芒著蹦蹦跳",
+        "zhDesc": null,
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 14.50
+            }
+        ]
+    },
+    {
+        "enName": "Brown Sugar Boba and Herbal Jelly Milk",
+        "zhName": "仙气山水画",
+        "zhDesc": "黑糖珍珠仙草鲜奶",
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 12.50
+            },
+            {
+                "temperature": "hot",
+                "price": 12.50
+            }
+        ]
+    },
+    {
+        "enName": "Soda and Handmade Jelly",
+        "zhName": "水母勇闯大海洋",
+        "zhDesc": null,
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 11.50
+            }
+        ]
+    },
+    {
+        "enName": "Matcha Boba Milk",
+        "zhName": "抹抹暗恋",
+        "zhDesc": "抹茶珍珠鲜奶",
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 12.50
+            }
+        ]
+    },
+    {
+        "enName": "Strawberry Boba Milk",
+        "zhName": "莓天想你",
+        "zhDesc": "草莓珍珠鲜奶",
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 12.50
+            }
+        ]
+    },
+    {
+        "enName": "Brown Sugar Boba Milk Tea",
+        "zhName": "幸福黑糖珍珠厚奶茶",
+        "zhDesc": null,
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 11.50
+            },
+            {
+                "temperature": "hot",
+                "price": 11.50
+            }
+        ]
+    },
+    {
+        "enName": "Grapefruit Green Tea",
+        "zhName": "一颗葡萄柚鲜榨茶",
+        "zhDesc": null,
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 12.50
+            }
+        ]
+    },
+    {
+        "enName": "Lemon Green Tea",
+        "zhName": "一颗柠檬鲜绿茶",
+        "zhDesc": null,
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 9.50
+            }
+        ]
+    },
+    {
+        "enName": "Lemon Black Tea",
+        "zhName": "花开富贵",
+        "zhDesc": "柠檬红茶",
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 9.50
+            }
+        ]
+    },
+    {
+        "enName": "Brown Sugar Boba Black Tea Latte",
+        "zhName": "黑糖珍珠红茶拿铁",
+        "zhDesc": null,
+        "type": null,
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 12.50
+            },
+            {
+                "temperature": "hot",
+                "price": 12.50
+            }
+        ]
+    },
+    {
+        "enName": "Roselle Tea mix Black Tea",
+        "zhName": "再一次心跳",
+        "zhDesc": "女神玫瑰花茶",
+        "type": "black-cup",
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 10.50
+            },
+            {
+                "temperature": "hot",
+                "price": 10.50
+            }
+        ]
+    },
+    {
+        "enName": "Green Tea mix Oolong Tea",
+        "zhName": "麒麟茶王",
+        "zhDesc": "绿茶乌龙茶",
+        "type": "black-cup",
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 10.50
+            },
+            {
+                "temperature": "hot",
+                "price": 10.50
+            }
+        ]
+    },
+    {
+        "enName": "Oolong Tea",
+        "zhName": "金风玉露乌龙茶",
+        "zhDesc": "乌龙茶",
+        "type": "black-cup",
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 8.50
+            },
+            {
+                "temperature": "hot",
+                "price": 8.50
+            }
+        ]
+    },
+    {
+        "enName": "Black Tea",
+        "zhName": "脸红心跳",
+        "zhDesc": "秘密红茶",
+        "type": "black-cup",
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 8.50
+            },
+            {
+                "temperature": "hot",
+                "price": 8.50
+            }
+        ]
+    },
+    {
+        "enName": "Green Tea",
+        "zhName": "夏绿蒂",
+        "zhDesc": "云雾绿茶",
+        "type": "black-cup",
+        "options": [
+            {
+                "temperature": "cold",
+                "price": 8.50
+            },
+            {
+                "temperature": "hot",
+                "price": 8.50
+            }
+        ]
+    },
+    {
+        "enName": "Extra Milk",
+        "zhName": "加奶",
+        "zhDesc": null,
+        "type": "add-on",
+        "price": 1.50
+    },
+    {
+        "enName": "Extra Boba",
+        "zhName": "加珍珠",
+        "zhDesc": null,
+        "type": "add-on",
+        "price": 1.50
+    }
+]
