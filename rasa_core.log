@@ -19,3 +19,101 @@
 2021-01-05 12:26:41,297 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
 2021-01-05 12:29:43,302 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
 2021-01-05 12:31:08,778 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 13:13:19,482 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 13:13:23,167 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\sanic\app.py", line 1096, in run
+    serve(**server_settings)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\sanic\server.py", line 742, in serve
+    trigger_events(before_start, loop)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\sanic\server.py", line 604, in trigger_events
+    loop.run_until_complete(result)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\asyncio\base_events.py", line 475, in run_until_complete
+    self.run_forever()
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\asyncio\base_events.py", line 442, in run_forever
+    self._run_once()
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\asyncio\base_events.py", line 1462, in _run_once
+    handle._run()
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\rasa\core\run.py", line 218, in load_agent_on_start
+    action_endpoint=endpoints.action,
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\rasa\core\agent.py", line 264, in load_agent
+    remote_storage=remote_storage,
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\rasa\core\agent.py", line 924, in load_local_model
+    remote_storage=remote_storage,
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\rasa\core\agent.py", line 380, in load
+    ensemble = PolicyEnsemble.load(core_model) if core_model else None
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\rasa\core\policies\ensemble.py", line 232, in load
+    policy = policy_cls.load(policy_path)
+  File "C:\Users\user\Documents\Year 3 Sem 1\BITI3413 - NLP\Project\milktea-CN_chatbot-nlp\policy\attention_policy.py", line 77, in load
+    'Attention': Attention})
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\keras\engine\saving.py", line 419, in load_model
+    model = _deserialize_model(f, custom_objects, compile)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\keras\engine\saving.py", line 325, in _deserialize_model
+    model.optimizer.set_weights(optimizer_weight_values)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\keras\optimizers.py", line 126, in set_weights
+    param_values = K.batch_get_value(params)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\keras\backend\tensorflow_backend.py", line 2420, in batch_get_value
+    return get_session().run(ops)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\keras\backend\tensorflow_backend.py", line 206, in get_session
+    session.run(tf.variables_initializer(uninitialized_vars))
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\tensorflow\python\client\session.py", line 929, in run
+    run_metadata_ptr)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\tensorflow\python\client\session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\tensorflow\python\client\session.py", line 1328, in _do_run
+    run_metadata)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\tensorflow\python\client\session.py", line 1334, in _do_call
+    return fn(*args)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\tensorflow\python\client\session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\tensorflow\python\client\session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\socketio\client.py", line 25, in signal_handler
+    return original_signal_handler(sig, frame)
+  File "c:\users\user\anaconda3\envs\nlp-chatbot\lib\site-packages\engineio\client.py", line 41, in signal_handler
+    return original_signal_handler(sig, frame)
+KeyboardInterrupt
+2021-01-05 13:13:32,769 [INFO ]  Killing Sanic server now.
+2021-01-05 13:13:40,588 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 13:15:25,588 [INFO ]  Killing Sanic server now.
+2021-01-05 13:16:13,563 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 13:16:47,847 [WARNI]  Feature 'intent_get_add_on' could not be found in feature map.
+2021-01-05 13:16:47,852 [WARNI]  Feature 'intent_get_add_on' could not be found in feature map.
+2021-01-05 13:16:47,853 [WARNI]  Feature 'intent_get_add_on' could not be found in feature map.
+2021-01-05 13:17:35,522 [WARNI]  Feature 'intent_get_add_on' could not be found in feature map.
+2021-01-05 13:17:35,524 [WARNI]  Feature 'intent_get_add_on' could not be found in feature map.
+2021-01-05 13:17:37,580 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 13:17:37,583 [WARNI]  Feature 'intent_get_add_on' could not be found in feature map.
+2021-01-05 13:20:30,236 [INFO ]  Killing Sanic server now.
+2021-01-05 13:21:11,909 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 13:21:41,551 [WARNI]  Feature 'intent_get_addon' could not be found in feature map.
+2021-01-05 13:21:41,558 [WARNI]  Feature 'intent_get_addon' could not be found in feature map.
+2021-01-05 13:21:41,561 [WARNI]  Feature 'intent_get_addon' could not be found in feature map.
+2021-01-05 13:21:47,624 [WARNI]  Feature 'intent_get_addon' could not be found in feature map.
+2021-01-05 13:21:47,627 [WARNI]  Feature 'intent_get_addon' could not be found in feature map.
+2021-01-05 13:21:49,718 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 13:21:49,721 [WARNI]  Feature 'intent_get_addon' could not be found in feature map.
+2021-01-05 13:22:06,040 [INFO ]  Killing Sanic server now.
+2021-01-05 13:22:36,795 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 13:23:05,584 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 13:51:35,291 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 13:54:43,761 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 14:02:15,623 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 14:17:47,583 [INFO ]  Killing Sanic server now.
+2021-01-05 14:18:33,705 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 14:33:31,114 [INFO ]  Killing Sanic server now.
+2021-01-05 14:33:39,699 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 14:34:27,611 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 14:36:16,797 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 14:36:18,880 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 14:37:03,746 [INFO ]  Killing Sanic server now.
+2021-01-05 14:37:13,009 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 14:39:13,104 [INFO ]  Killing Sanic server now.
+2021-01-05 14:39:21,797 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-01-05 14:40:02,696 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 14:41:42,153 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 14:41:44,209 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2021-01-05 14:48:52,621 [INFO ]  Killing Sanic server now.
+2021-01-05 14:49:05,074 [INFO ]  Starting Rasa server on http://localhost:5005

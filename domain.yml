@@ -6,6 +6,8 @@ intents:
 - confirm
 - deny
 - order
+- inform_temperature
+- get_addon
 - thanks
 - inform_size
 - unknown_intent
@@ -13,7 +15,8 @@ intents:
 actions:
 - utter_greet
 - utter_ask_order_what
-- utter_ask_size
+- utter_ask_temperature
+- utter_ask_addon
 - utter_affirm
 - utter_change_what
 - utter_goodbye
@@ -24,11 +27,17 @@ actions:
 entities:
   - type
   - size
+  - temperature
+  - addon
 
 slots:
   type:
     type: text
   size:
+    type: text
+  temperature:
+    type: text
+  addon:
     type: text
 
 templates:
@@ -38,8 +47,11 @@ templates:
   utter_ask_order_what:
   - text: "想要喝点什么？"
 
-  utter_ask_size:
-  - text: "想要什么规格的呢？我们有中/大/特大杯"
+  utter_ask_temperature:
+  - text: "您要热还是冷的？"
+
+  utter_ask_addon:
+  - text: "您想要加奶或是加珍珠吗？"
 
   utter_affirm:
   - text: "确认下单这些对吗"

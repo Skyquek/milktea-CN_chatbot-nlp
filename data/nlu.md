@@ -109,35 +109,20 @@
 - 喂
 
 ## intent:order
-- [奶茶](type)
-- [咖啡](type)
-- 我想要一杯[奶茶](type)
-- 要杯[奶茶](type)
-- 有[奶茶](type)吗
-- 有[奶茶](type)卖吗
-- 想要一杯[咖啡](type)
-- 要杯[咖啡](type)
-- 有[咖啡](type)吗
-- 我想要一杯[卡布奇诺](type)
-- 要杯[卡布奇诺](type)
-- [卡布奇诺](type)
+- [焰遇幸福](type)
+- [芒著蹦蹦跳](type)
+- [仙气山水画](type)
 
-## intent:inform_size
-- [中](size)
-- [中](size)的
-- [中](size)杯
-- [中](size)杯吧
-- 要[中](size)杯
-- [大](size)
-- [大](size)的
-- [大](size)杯
-- [大](size)杯吧
-- 要[大](size)杯
-- [特大](size)
-- [特大](size)的
-- [特大](size)杯
-- [特大](size)杯吧
-- 要[特大](size)杯
+
+## intent:inform_temperature
+- [热](temperature)
+- [冷](temperature)
+
+
+## intent:get_addon
+- [加奶](addon)
+- [加珍珠](addon)
+
 
 ## intent:thanks
 - 谢谢
