@@ -117,4 +117,3 @@ KeyboardInterrupt
 2021-01-05 14:41:44,209 [ERROR]  Encountered an exception while running action 'action_charge'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
 2021-01-05 14:48:52,621 [INFO ]  Killing Sanic server now.
 2021-01-05 14:49:05,074 [INFO ]  Starting Rasa server on http://localhost:5005
-2021-01-05 15:51:29,751 [INFO ]  Killing Sanic server now.
