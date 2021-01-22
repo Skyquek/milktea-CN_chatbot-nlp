@@ -1,9 +1,15 @@
 #/bin/bash
 
+echo "Trains"
 rasa train &
 
-rasa run actions &
-
+echo "Bert Start"
 bert-serving-start -model_dir chinese_L-12_H-768_A-12/ -num_worker=1 &
 
-rasa run
+echo "Actions"
+rasa run actions &
+
+echo "Run"
+rasa run &
+
+while true; do sleep 10000; done
