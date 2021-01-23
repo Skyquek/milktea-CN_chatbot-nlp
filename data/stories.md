@@ -1,6 +1,5 @@
 ## only greet 
 * greet
-  - utter_greet
   - utter_ask_order_what
 
 ## order blacksugarbobahot
@@ -12,4 +11,3 @@
   - utter_affirm
 * confirm
   - action_charge
-  - utter_goodbye
