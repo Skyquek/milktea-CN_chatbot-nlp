@@ -1,0 +1,10 @@
+{
+    "/api": {
+        "target": "http://128.199.159.89:5005/webhooks/rest/webhook",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/api": ""
+        }
+    }
+}
