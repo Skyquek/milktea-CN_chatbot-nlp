@@ -3,7 +3,9 @@
 - [好的](respond)
 - [行](respond)
 - [可以的](respond)
-
+- [对的](respond)
+- [对](respond)
+- [没错](respond)
 
 ## intent:deny
 - 不要
@@ -103,6 +105,8 @@
 ## intent:inform_temperature
 - [热](temperature)
 - [冷](temperature)
+- [热的](temperature)
+- [冷的](temperature)
 
 
 ## intent:get_addon

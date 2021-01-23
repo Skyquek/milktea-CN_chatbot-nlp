@@ -55,16 +55,18 @@ class ActionCharge(Action):
         else:
             addon = 0
 
-        if inputConfirm == "嗯":
-            try:
-                ttl_price = price1[inputDrinkType][inputDrinkTemperature] + addon
-                dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
-                dispatcher.utter_message("谢谢您!")
-            except:
-                dispatcher.utter__ask_order_what
+        try:
+            ttl_price = price1[inputDrinkType][inputDrinkTemperature] + addon
+            dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
+            dispatcher.utter_message("谢谢您!")
+        except:
+            dispatcher.utter_message("您的饮料只有冷饮，这里会自动帮你换成冷的哦~")
+            ttl_price = price1[inputDrinkType]["cold"] + addon
+            dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
+            dispatcher.utter_message("谢谢您!")
 
         else:
-            dipatcher.utter_change_what
+            dispatcher.utter_change_what
             return []
 
         # 提取饮料种类，规格
