@@ -10,6 +10,6 @@ echo "Actions"
 rasa run actions &
 
 echo "Run"
-rasa run
+rasa run &
 
 while true; do sleep 10000; done
