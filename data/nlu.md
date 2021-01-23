@@ -1,36 +1,11 @@
 ## intent:confirm
-- 嗯
-- 好的
-- 行
-- 可以的
-- 恩
-- 中中
-- 中
-- 办吧
-- 办理吧
-- 行的
-- 确定
-- 肯定
-- 一定
-- 就这样
-- 就这么办
-- 就这么着
-- 就这么着吧
-- 没问题
-- 没问题
-- 中
-- 中中
-- 办
-- 办吧
-- 恩
-- 可以的
-- 你看着办
-- 办理吧
-- 行
-- 办理
-- 嗯
-- 好的
-- 行的
+- [嗯](respond)
+- [好的](respond)
+- [行](respond)
+- [可以的](respond)
+- [对的](respond)
+- [对](respond)
+- [没错](respond)
 
 ## intent:deny
 - 不要
@@ -112,11 +87,26 @@
 - [焰遇幸福](type)
 - [芒著蹦蹦跳](type)
 - [仙气山水画](type)
+- [水母勇闯大海洋](type)
+- [抹抹暗恋](type)
+- [莓天想你](type)
+- [幸福黑糖珍珠厚奶茶](type)
+- [一颗葡萄柚鲜榨茶](type)
+- [一颗柠檬鲜绿茶](type)
+- [花开富贵](type)
+- [黑糖珍珠红茶拿铁](type)
+- [再一次心跳](type)
+- [麒麟茶王](type)
+- [金风玉露乌龙茶](type)
+- [脸红心跳](type)
+- [夏绿蒂](type)
 
 
 ## intent:inform_temperature
 - [热](temperature)
 - [冷](temperature)
+- [热的](temperature)
+- [冷的](temperature)
 
 
 ## intent:get_addon
