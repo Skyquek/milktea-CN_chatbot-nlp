@@ -80,6 +80,10 @@ const secondaryMenu = [
     enName: 'Extra Boba',
     zhName: '加珍珠',
   },
+  {
+    enName: 'No addition',
+    zhName: '什么都不用加',
+  },
 ];
 
 const temperatureMenu = [
@@ -90,6 +94,17 @@ const temperatureMenu = [
   {
     enName: 'Cold',
     zhName: '冷',
+  },
+];
+
+const finalMenu = [
+  {
+    enName: 'Yes, Confirm',
+    zhName: '嗯',
+  },
+  {
+    enName: 'No',
+    zhName: '不确定',
   },
 ];
 
@@ -148,6 +163,8 @@ export class AppComponent {
           this.menu = temperatureMenu;
         } else if (RegExp(/.*(加奶).*(加珍珠).*/g).test(responseSingle.text)) {
           this.menu = secondaryMenu;
+        } else if (RegExp(/确认.*/g).test(responseSingle.text)) {
+          this.menu = finalMenu;
         } else {
           this.menu = mainMenu;
         }
