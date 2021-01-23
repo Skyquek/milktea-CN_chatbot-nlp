@@ -1,19 +1,20 @@
 intents:
 - greet:
-    triggers: utter_greet
+    triggers: utter_ask_order_what
 - goodbye:
     triggers: utter_goodbye
-- confirm
 - deny
 - order
-- inform_temperature
-- get_addon
+- inform_temperature:
+    triggers: utter_ask_addon
+- get_addon:
+    triggers: utter_affirm
 - thanks
-- inform_size
 - unknown_intent
+- confirm:
+    triggers: action_charge
 
 actions:
-- utter_greet
 - utter_ask_order_what
 - utter_ask_temperature
 - utter_ask_addon
@@ -26,26 +27,24 @@ actions:
 
 entities:
   - type
-  - size
   - temperature
   - addon
+  - respond
 
 slots:
   type:
-    type: text
-  size:
     type: text
   temperature:
     type: text
   addon:
     type: text
+  respond:
+    type: text
 
 templates:
-  utter_greet:
-  - text: "你好"
 
   utter_ask_order_what:
-  - text: "想要喝点什么？"
+  - text: "你好，想要喝点什么？"
 
   utter_ask_temperature:
   - text: "您要热还是冷的？"
@@ -54,7 +53,7 @@ templates:
   - text: "您想要加奶或是加珍珠吗？"
 
   utter_affirm:
-  - text: "确认下单这些对吗"
+  - text: "确认下单这些对吗？"
 
   utter_change_what:
   - text: "那么想要换点什么呢？"

@@ -14,7 +14,7 @@ class ActionCharge(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # Opening JSON file
-        f = open('XingFuTangBobaList.json')
+        f = open('XingFuTangBobaList.json', encoding="utf8")
         menus = json.load(f)
 
         price1 = {}
@@ -36,11 +36,12 @@ class ActionCharge(Action):
         inputDrinkType = tracker.get_slot("type")
         inputDrinkTemperature = tracker.get_slot("temperature")
         inputAddOn = tracker.get_slot("addon")
-
+        inputConfirm = tracker.get_slot("respond")
 
         inputDrinkType = inputDrinkType.replace(" ", "")
         inputDrinkTemperature = inputDrinkTemperature.replace(" ", "")
         inputAddOn = inputAddOn.replace(" ", "")
+        inputConfirm = inputConfirm.replace(" ", "")
 
         if inputDrinkTemperature == "热":
             inputDrinkTemperature = "hot"
@@ -54,9 +55,19 @@ class ActionCharge(Action):
         else:
             addon = 0
 
-        ttl_price = price1[inputDrinkType][inputDrinkTemperature] + addon
-        dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
+        try:
+            ttl_price = price1[inputDrinkType][inputDrinkTemperature] + addon
+            dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
+            dispatcher.utter_message("谢谢您!")
+        except:
+            dispatcher.utter_message("您的饮料只有冷饮，这里会自动帮你换成冷的哦~")
+            ttl_price = price1[inputDrinkType]["cold"] + addon
+            dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
+            dispatcher.utter_message("谢谢您!")
 
+        else:
+            dispatcher.utter_change_what
+            return []
 
         # 提取饮料种类，规格
         # type = tracker.get_slot("type")
