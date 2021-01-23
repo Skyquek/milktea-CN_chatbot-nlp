@@ -65,10 +65,6 @@ class ActionCharge(Action):
             dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
             dispatcher.utter_message("谢谢您!")
 
-        else:
-            dispatcher.utter_change_what
-            return []
-
         # 提取饮料种类，规格
         # type = tracker.get_slot("type")
         # size = tracker.get_slot("size")
