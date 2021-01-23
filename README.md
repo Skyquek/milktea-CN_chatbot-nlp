@@ -1,5 +1,4 @@
-# milktea-CN_chatbot-nlp
-Chinese Conversation Chatbot
+# Chinese Conversation Chatbot
 
 1. bert-as-service is a sentence encoding service for mapping a variable-length sentence to a fixed-length vector.
 
@@ -48,7 +47,7 @@ Chinese Conversation Chatbot
 ```
 $ docker build -t nlp-chatbot:latest .
 ```
-
+ 
 2. Run the Images
 ```
 $ docker run -p 5005:5005 nlp-chatbot:latest -name xinfutang
