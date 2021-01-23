@@ -43,9 +43,9 @@ class ActionCharge(Action):
         inputAddOn = inputAddOn.replace(" ", "")
         inputConfirm = inputConfirm.replace(" ", "")
 
-        if inputDrinkTemperature == "热":
+        if inputDrinkTemperature == "热" or "热的":
             inputDrinkTemperature = "hot"
-        elif inputDrinkTemperature == "冷":
+        elif inputDrinkTemperature == "冷" or "冷的":
             inputDrinkTemperature = "cold"
 
         if inputAddOn == "加奶":
