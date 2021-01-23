@@ -13,7 +13,7 @@ docker build -t xingfutang-chatbot-frontend  . --no-cache
 
 echo Creating new frontend..
 docker rm -f xingfutang-chatbot-frontend
-docker run --name xingfutang-chatbot-frontend  -p 52288:80 -d ai-trademark-frontend
+docker run --name xingfutang-chatbot-frontend  -p 52288:80 -d xingfutang-chatbot-frontend
 
 echo 
 echo Building latest backend..
