@@ -103,7 +103,7 @@ export class AppComponent {
   chatHistory: Array<ChatHistorySingle> = [
     {
       isMine: false,
-      message: '你好！',
+      message: '您好！请问您想喝些什么？',
     },
   ];
   menu = mainMenu;
