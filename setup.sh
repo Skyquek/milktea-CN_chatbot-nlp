@@ -10,6 +10,6 @@ echo "Actions"
 rasa run actions &
 
 echo "Run"
-rasa run &
+rasa run --enable_api & --cors “*” &
 
 while true; do sleep 10000; done
