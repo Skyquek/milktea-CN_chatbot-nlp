@@ -43,11 +43,7 @@ class ActionCharge(Action):
         inputAddOn = inputAddOn.replace(" ", "")
         inputConfirm = inputConfirm.replace(" ", "")
 
-        if inputDrinkTemperature == "热" or "热的":
-            inputDrinkTemperature = "hot"
-        elif inputDrinkTemperature == "冷" or "冷的":
-            inputDrinkTemperature = "cold"
-
+        
         if inputAddOn == "加奶":
             addon = price1["加奶"]
         elif inputAddOn == "加珍珠":
@@ -55,24 +51,22 @@ class ActionCharge(Action):
         else:
             addon = 0
 
-        try:
+        if inputDrinkTemperature == "热" or inputDrinkTemperature == "热的":
+            inputDrinkTemperature = "hot"
+            try:
+                ttl_price = price1[inputDrinkType][inputDrinkTemperature] + addon
+                dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
+                dispatcher.utter_message("谢谢您!")
+            except:
+                dispatcher.utter_message("亲！您的饮料只有冷饮，这里会自动帮你换成冷的哦~")
+                ttl_price = price1[inputDrinkType]["cold"] + addon
+                dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
+                dispatcher.utter_message("谢谢您!")
+
+        elif inputDrinkTemperature == "冷" or inputDrinkTemperature == "冷的":
+            inputDrinkTemperature = "cold"
             ttl_price = price1[inputDrinkType][inputDrinkTemperature] + addon
             dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
             dispatcher.utter_message("谢谢您!")
-        except:
-            dispatcher.utter_message("您的饮料只有冷饮，这里会自动帮你换成冷的哦~")
-            ttl_price = price1[inputDrinkType]["cold"] + addon
-            dispatcher.utter_message("一共 %s 令吉" % (ttl_price))
-            dispatcher.utter_message("谢谢您!")
-
-        # 提取饮料种类，规格
-        # type = tracker.get_slot("type")
-        # size = tracker.get_slot("size")
-        # if size not in ['中','大','特大']:
-        #     dispatcher.utter_message("不好意思，只有中杯、大杯和特大杯")
-        #     return []
-        # price = price1[type] * price2[size]
-
-        # dispatcher.utter_message("您的%s杯%s一共%s元" % (size, type, price))
 
         return []
