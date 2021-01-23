@@ -1,0 +1,29 @@
+<div class="flex-container">
+  <div class="menu-container">
+    <img
+      src="https://d1sag4ddilekf6.cloudfront.net/compressed/merchants/4-CY31V8LCEN5YGE/hero/d8c9a564e56249e4836a8d66e21a14a8_1574046100435195750.jpeg"
+      style="width:100%;" />
+    <h1 style="padding-left:20px;">Recommended Options</h1>
+    <button mat-button *ngFor="let menuItem of menu" color="primary" (click)="buttonClick(menuItem)">
+      {{menuItem.zhName}} | {{menuItem.enName}}
+    </button>
+  </div>
+
+  <div class="chat-container">
+    <mat-list role="list" class="chat-list" id="chat-list">
+      <div *ngFor="let chat of chatHistory">
+        <mat-list-item role="listitem" [class.server-response]="chat.isMine" [class.my-text]="!chat.isMine">
+          {{chat.message}}
+        </mat-list-item>
+      </div>
+
+    </mat-list>
+    <form [formGroup]="chatForm" novalidate>
+      <mat-form-field appearance="outline" class="chat-form" (keyup.enter)="submit()">
+        <mat-label>Ask anything!</mat-label>
+        <input matInput formControlName="message">
+      </mat-form-field>
+
+    </form>
+  </div>
+</div>
