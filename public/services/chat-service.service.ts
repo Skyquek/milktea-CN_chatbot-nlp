@@ -7,7 +7,8 @@ import { ChatReq, ChatRes } from 'models/chat';
 
 // http://128.199.159.89:5005/webhooks/rest/webhook
 
-const backendEndpoint: string = 'http://localhost:4200/api';
+const backendEndpoint: string =
+  'http://128.199.159.89:5005/webhooks/rest/webhook';
 
 @Injectable({
   providedIn: 'root',
